@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Repo Status</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+
+<h2>Live GitHub Repository Status Dashboard</h2>
+
+<table id="repos">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Archived</th>
+      <th>Has Secrets</th>
+      <th>Last Committer</th>
+      <th>Last Updated</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+fetch("data.json")
+  .then(res => res.json())
+  .then(data => {
+    const tbody = document.querySelector("#repos tbody");
+    data.forEach(r => {
+      const row = `
+        <tr>
+          <td>${r.repo}</td>
+          <td>${r.archived}</td>
+          <td>${r.has_secrets}</td>
+          <td>${r.last_committer}</td>
+          <td>${r.updated_at}</td>
+        </tr>`;
+      tbody.innerHTML += row;
+    })
+  });
+</script>
+
+</body>
+</html>
