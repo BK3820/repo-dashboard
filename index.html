@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GitHub Repo Status</title>
+  <title>GitHub Repo Status Dashboard</title>
   <style>
-    body { font-family: Arial; padding: 20px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      max-width: 1100px;
+      margin: auto;
+    }
+    h1, h2 { margin-bottom: 10px; }
+    #summary p { margin: 4px 0; font-size: 16px; }
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 20px; 
+    }
+    th, td { 
+      border: 1px solid #999; 
+      padding: 8px; 
+      text-align: left; 
+    }
     th { background: #f4f4f4; }
   </style>
 </head>
 <body>
 
-<h2>Live GitHub Repository Status Dashboard</h2>
+<h1>GitHub Repository Status Dashboard</h1>
 
+<h2>Summary</h2>
+<div id="summary">
+  <p>Total Repositories: <span id="total">0</span></p>
+  <p>Active Repositories: <span id="active">0</span></p>
+  <p>Archived Repositories: <span id="archived">0</span></p>
+  <p>Repos With Secrets: <span id="withSecrets">0</span></p>
+  <p>Repos Without Secrets: <span id="withoutSecrets">0</span></p>
+</div>
+
+<hr>
+
+<h2>Repository Details</h2>
 <table id="repos">
   <thead>
     <tr>
@@ -30,7 +57,25 @@
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
+
+    // ----- COUNTING -----
+    const total = data.length;
+    const archived = data.filter(r => r.archived).length;
+    const active = total - archived;
+    const withSecrets = data.filter(r => r.has_secrets).length;
+    const withoutSecrets = total - withSecrets;
+
+    // ----- UPDATE SUMMARY -----
+    document.getElementById("total").textContent = total;
+    document.getElementById("active").textContent = active;
+    document.getElementById("archived").textContent = archived;
+    document.getElementById("withSecrets").textContent = withSecrets;
+    document.getElementById("withoutSecrets").textContent = withoutSecrets;
+
+    // ----- POPULATE TABLE -----
     const tbody = document.querySelector("#repos tbody");
+    tbody.innerHTML = ""; // clear existing
+
     data.forEach(r => {
       const row = `
         <tr>
@@ -41,7 +86,7 @@ fetch("data.json")
           <td>${r.updated_at}</td>
         </tr>`;
       tbody.innerHTML += row;
-    })
+    });
   });
 </script>
 
