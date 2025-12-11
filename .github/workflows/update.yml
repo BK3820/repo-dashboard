@@ -1,0 +1,29 @@
+name: Update Repo Dashboard
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python
+        run: sudo apt-get install python3 -y
+
+      - name: Run data fetch script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python3 fetch.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data.json
+          git commit -m "update repo status" || exit 0
+          git push
