@@ -29,10 +29,10 @@
   },
   {
     "repo": "AZKeyvault",
-    "archived": false,
+    "archived": true,
     "has_secrets": false,
     "last_committer": "Balakumar Palanisamy",
-    "updated_at": "2025-05-13T23:43:43Z"
+    "updated_at": "2025-12-11T01:04:25Z"
   },
   {
     "repo": "Azure_Powershell_scripts",
@@ -298,7 +298,7 @@
     "archived": false,
     "has_secrets": true,
     "last_committer": "Balakumar Palanisamy",
-    "updated_at": "2025-12-11T00:43:15Z"
+    "updated_at": "2025-12-11T01:02:04Z"
   },
   {
     "repo": "responsivecard_des",
