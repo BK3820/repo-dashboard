@@ -1,0 +1,373 @@
+[
+  {
+    "repo": "AdoDotnet",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BK3820",
+    "updated_at": "2022-05-09T04:23:32Z"
+  },
+  {
+    "repo": "analysis_on_stocks",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-22T13:32:24Z"
+  },
+  {
+    "repo": "ARM",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2024-12-10T19:12:57Z"
+  },
+  {
+    "repo": "Autonomous_car",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-09-22T12:24:56Z"
+  },
+  {
+    "repo": "AZKeyvault",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-05-13T23:43:43Z"
+  },
+  {
+    "repo": "Azure_Powershell_scripts",
+    "archived": false,
+    "has_secrets": true,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-02-02T21:01:48Z"
+  },
+  {
+    "repo": "bank_management",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-06-15T08:24:05Z"
+  },
+  {
+    "repo": "birth_rate_analysis",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-25T06:07:25Z"
+  },
+  {
+    "repo": "bitcoin_prediction",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-23T11:49:30Z"
+  },
+  {
+    "repo": "BK3820",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-09-12T14:48:56Z"
+  },
+  {
+    "repo": "BK_welcome2myporfolio",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-08-15T13:12:39Z"
+  },
+  {
+    "repo": "C-",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2022-04-08T14:13:13Z"
+  },
+  {
+    "repo": "CloudResumeChallenge",
+    "archived": false,
+    "has_secrets": true,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2024-12-24T15:47:57Z"
+  },
+  {
+    "repo": "CollegeManagementSystem",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BK3820",
+    "updated_at": "2022-05-13T03:30:56Z"
+  },
+  {
+    "repo": "CV",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-04-03T06:55:06Z"
+  },
+  {
+    "repo": "c_datastrucure",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-08-18T13:20:09Z"
+  },
+  {
+    "repo": "datasctuctures_python",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-08-04T11:18:11Z"
+  },
+  {
+    "repo": "data_scaraping_imdb",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-04-04T00:54:14Z"
+  },
+  {
+    "repo": "DBSCAN",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-04-10T06:24:02Z"
+  },
+  {
+    "repo": "dev-backstage",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-10-14T00:14:07Z"
+  },
+  {
+    "repo": "EDA_on_Chronic_kidney_disease",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-29T11:31:11Z"
+  },
+  {
+    "repo": "FaceDetection_using_mediapipe",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-13T10:37:01Z"
+  },
+  {
+    "repo": "FIFA19",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-27T03:04:30Z"
+  },
+  {
+    "repo": "flux-cluster-configs",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-09-21T18:35:54Z"
+  },
+  {
+    "repo": "IDS_Using_ML",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BK3820",
+    "updated_at": "2022-05-10T02:28:40Z"
+  },
+  {
+    "repo": "Jenkins-github-maven",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-03-11T23:20:48Z"
+  },
+  {
+    "repo": "jenkins-terraform",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-12-06T03:38:43Z"
+  },
+  {
+    "repo": "k8",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-03-10T00:46:38Z"
+  },
+  {
+    "repo": "k8sProject-Terraform-",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-03-31T16:42:36Z"
+  },
+  {
+    "repo": "linearregression",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-06-12T08:13:27Z"
+  },
+  {
+    "repo": "loginapp",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2024-12-09T21:28:29Z"
+  },
+  {
+    "repo": "MobilePaymentSystem",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2022-05-09T04:28:41Z"
+  },
+  {
+    "repo": "Multicloud_Data_Processing",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-01-30T18:01:08Z"
+  },
+  {
+    "repo": "Naive_bayers_algorithm",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-06-23T06:59:30Z"
+  },
+  {
+    "repo": "nodejs-solar-system-gitea",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Barahalikar Siddharth",
+    "updated_at": "2025-03-12T14:32:44Z"
+  },
+  {
+    "repo": "personaldiary_ucng_c",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-08-17T12:31:27Z"
+  },
+  {
+    "repo": "Personal_Portfolio",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-06-12T00:59:04Z"
+  },
+  {
+    "repo": "pingpong_game",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-06-06T14:00:31Z"
+  },
+  {
+    "repo": "py",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "codebasics",
+    "updated_at": "2021-08-16T01:35:26Z"
+  },
+  {
+    "repo": "Python-For-DevOps",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-05-18T21:33:06Z"
+  },
+  {
+    "repo": "python_mini_projects",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-08-20T12:34:18Z"
+  },
+  {
+    "repo": "R",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2025-02-03T00:12:14Z"
+  },
+  {
+    "repo": "repo-dashboard",
+    "archived": false,
+    "has_secrets": true,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-12-11T00:43:15Z"
+  },
+  {
+    "repo": "responsivecard_des",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-06-10T08:57:30Z"
+  },
+  {
+    "repo": "sample",
+    "archived": false,
+    "has_secrets": true,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2024-11-04T19:27:00Z"
+  },
+  {
+    "repo": "SampleApp",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-03-19T18:53:02Z"
+  },
+  {
+    "repo": "SampleFlaskAPP",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Ubuntu",
+    "updated_at": "2025-02-05T19:32:41Z"
+  },
+  {
+    "repo": "sampletest",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2024-11-09T18:56:32Z"
+  },
+  {
+    "repo": "samplewebsite",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "N/A",
+    "updated_at": "2024-11-04T19:11:42Z"
+  },
+  {
+    "repo": "Social_distancing",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-09-22T11:52:10Z"
+  },
+  {
+    "repo": "Terraform",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-01-16T22:17:58Z"
+  },
+  {
+    "repo": "Terraform_Jenkins",
+    "archived": false,
+    "has_secrets": true,
+    "last_committer": "Balakumar Palanisamy",
+    "updated_at": "2025-06-08T23:10:07Z"
+  },
+  {
+    "repo": "TicTacToe___",
+    "archived": false,
+    "has_secrets": false,
+    "last_committer": "BALAKUMAR P",
+    "updated_at": "2021-05-31T03:36:29Z"
+  }
+]
