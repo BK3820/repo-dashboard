@@ -1,47 +1,54 @@
 import requests, json, os
 
-GITHUB_USER = "BK3820"  # change this
-TOKEN = os.getenv("GH_TOKEN")
+GITHUB_USER = "BK3820"  # change here if needed
+TOKEN = os.getenv("GH_TOKEN", "").strip()
 
-headers = {"Authorization": f"Bearer {TOKEN}"}
+headers = {
+    "Authorization": f"Bearer {TOKEN}",
+    "Accept": "application/vnd.github+json"
+}
 
-# --- Fetch repositories ---
+# ---- Fetch all repositories ----
 repos = requests.get(
     f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100",
-    headers=headers,
+    headers=headers
 ).json()
 
 output = []
 
 for r in repos:
-    name = r["name"]
-    archived = r["archived"]
+    name = r.get("name")
+    archived = r.get("archived", False)
 
-    # --- Last Committer ---
+    # ---- Last Committer ----
     commits = requests.get(
         f"https://api.github.com/repos/{GITHUB_USER}/{name}/commits",
-        headers=headers,
+        headers=headers
     ).json()
-    last_commit = (
-        commits[0]["commit"]["author"]["name"] if commits and type(commits) == list else "N/A"
-    )
 
-    # --- Secrets Check ---
+    if isinstance(commits, list) and len(commits) > 0:
+        last_committer = commits[0]["commit"]["author"]["name"]
+    else:
+        last_committer = "N/A"
+
+    # ---- Has Secrets ----
     secrets = requests.get(
         f"https://api.github.com/repos/{GITHUB_USER}/{name}/actions/secrets",
-        headers=headers,
+        headers=headers
     ).json()
+
     has_secrets = len(secrets.get("secrets", [])) > 0
 
-    # --- Append final data ---
+    # ---- Append data ----
     output.append({
         "repo": name,
         "archived": archived,
         "has_secrets": has_secrets,
-        "last_committer": last_commit,
-        "updated_at": r["updated_at"],
+        "last_committer": last_committer,
+        "updated_at": r.get("updated_at")
     })
 
+# ---- Write JSON Output ----
 with open("data.json", "w") as f:
     json.dump(output, f, indent=2)
 
