@@ -1,9 +1,9 @@
 name: Update Repo Dashboard
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # every hour
-  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 * * * *"   # every hour
+  # workflow_dispatch:
 
 jobs:
   fetch:
