@@ -1,30 +1,22 @@
 {
-  "name": "backstage-dev",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
-
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/git:1": {}
+  "name": "Backstage Dev Container",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
   },
-
-  "forwardPorts": [3000, 3001, 7007],
-
-  "postCreateCommand": [
-    "sudo apt-get update",
-    "sudo apt-get install -y python3 make g++ build-essential",
-    "corepack enable",
-    "yarn set version 4.4.1",
-    "yarn install"
-  ],
-
+  "forwardPorts": [3000, 7007],
+  "remoteUser": "node",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-from-docker:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens"
       ]
     }
-  },
-
-  "remoteUser": "node"
+  }
 }
